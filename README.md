@@ -1,5 +1,29 @@
-# flyweight
+<h1 style="text-align: center;">Flyweight</h1>
 
-A structural design pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
+## ¿Qué es?
+<p style="text-align:justify;">
+Es un patrón de diseño estructural que se utiliza en programación para 
+optimizar el uso de objetos cuando se trabaja con una gran cantidad de 
+instancias de un mismo tipo. Su principal objetivo es minimizar el consumo de 
+memoria o recursos al compartir datos comunes entre múltiples objetos en lugar de 
+replicar estos datos en cada objeto individual.
 
-<img width="426" height="361" alt="image" src="https://github.com/user-attachments/assets/f45a63ec-a84a-4855-9aa2-548b2cd46ebb" />
+## Estructura
+Objeto compartido que se puede usar a la vez en varios contextos
+Necesita dos estados:
+- Estado intríseco  (Compartido en cualquier contexto)
+- Estado extrínseco (T)
+
+## ¿Cuándo es bueno usarlo?
+- La aplicacion tiene gran cantidad de objetos
+- El costo de almacenamiento es elevado.
+- La aplicacion no depende de la identidad de los objetos.
+- Muchos objetos pueden ser remplazados por pocos objetos compartidos.
+
+## Consecuencias
+- Aumento de costos en cuestion de tiempo de ejecución.
+- Entre mas objetos se compartan hay un mayor ahorro de recursos.
+
+## Demo
+![Modelo del demo](resources/diagrama.jpg)
++ [Codigo aquí](https://github.com/MCMB1803/flyweight.git)
